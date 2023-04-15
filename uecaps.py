@@ -34,6 +34,7 @@ def dlcombohandler(band, dlcc):
 # Attach the carrier count to the band number as an alphabetic letter
 def ulcombohandler(band, ulcc):
     if ulcc > 0:
+        ulcc = ulcc - 1
         if ulcc > 1:
             ulcc = string.ascii_uppercase[ulcc]
         else:
