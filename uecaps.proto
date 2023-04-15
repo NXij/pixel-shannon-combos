@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message a {
+	repeated b a = 3;
+}
+
+message b {
+	repeated c b = 2;
+}
+
+message c {
+	repeated ca c = 1;
+}
+
+message ca {
+	required int32 band = 1;
+	required int32 dlcc = 2;
+	required int32 ulcc = 3;
+	required bytes dl = 6;
+	optional bytes ul = 7;
+}
