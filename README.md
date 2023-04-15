@@ -1,5 +1,5 @@
 # pixel-shannon-combos
-A new set of configuration files was introduced by Google on the first beta release of Android 14 for the Pixel 7 series.
+A new set of configuration files was introduced by Google on the first beta release of Android 14 for the Pixel 7 series along with the implementation of Rel 16 3GPP in its Shannon 5300 modem.
 
 These configuration files reside in `/vendor/firmware/uecapconfig` in the form of .binarypb (Protobuf) files
 
