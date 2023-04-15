@@ -13,7 +13,7 @@ Provide the file as an argument to the uecaps.py script:
 
 `uecaps.py ./uecapconfig/WILDCARD.binarypb > WILDCARD.csv`
 
-The output will create a coma delimited csv file where the left column defines downlink and the right one uplink
+The output will create a comma delimited csv file where the left column defines downlink and the right one uplink
 
 Here is an example line
 
