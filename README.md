@@ -1,5 +1,5 @@
 # Pixel-Shannon-Combos
-Pixel-Shannon-Combos is a set of configuration files introduced by Google in the first beta release of Android 14 for the Pixel 7 series. It includes the implementation of Rel 16 3GPP in its Shannon 5300 modem. These configuration files are stored in `/vendor/firmware/uecapconfig` in the form of .binarypb (Protobuf) files.
+An attempt to decode the new set of configuration files introduced by Google in the first beta release of Android 14 for the Pixel 7 series which included the implementation of Rel 16 3GPP in its Shannon 5300 modem. These configuration files are stored in `/vendor/firmware/uecapconfig` in the form of .binarypb (Protobuf) files.
 
 The configuration files define NR SA and NR NSA carrier aggregation combinations per mobile carrier.
 
