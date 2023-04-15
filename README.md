@@ -5,6 +5,9 @@ These configuration files reside in `/vendor/firmware/uecapconfig` in the form o
 
 NR SA and NR SA carrier aggregation combinations get defined here per mobile carrier
 
+## Note
+This is by no means final as I do not understand many of the functionality defined in the uecapconfig files
+
 ## Running
 Provide the file as an argument to the uecaps.py script:
 
