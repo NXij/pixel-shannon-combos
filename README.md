@@ -3,7 +3,7 @@ A new set of configuration files was introduced by Google on the first beta rele
 
 These configuration files reside in `/vendor/firmware/uecapconfig` in the form of .binarypb (Protobuf) files
 
-NR SA and NR SA carrier aggregation combinations get defined here per mobile carrier
+NR SA and NR NSA carrier aggregation combinations get defined here per mobile carrier
 
 ## Note
 This is by no means final as I do not understand many of the functionality defined in the uecapconfig files
