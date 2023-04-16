@@ -14,3 +14,5 @@ To use Pixel-Shannon-Combos, simply provide the configuration file as an argumen
 The output will generate a comma-separated value (CSV) file where the left column defines downlink and the right column defines uplink. Here's an example of a line:
 
 `1-3-7C_n28,7_n28`
+
+Previously decompiled csv's can be found in the uecapconfig_csv directory of this repo - note that these were generated on 15th april and could be out of that at the moment you're looking at this.
