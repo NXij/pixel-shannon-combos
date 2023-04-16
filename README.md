@@ -15,4 +15,4 @@ The output will generate a comma-separated value (CSV) file where the left colum
 
 `1-3-7C_n28,7_n28`
 
-Previously decompiled csv's can be found in the uecapconfig_csv directory of this repo - note that these were generated on 15th april and could be out of that at the moment you're looking at this.
+Previously decompiled csv's can be found in the uecapconfig_csv directory of this repo - note that these were generated on April 15th and could be out of date at the moment you're looking at this.
