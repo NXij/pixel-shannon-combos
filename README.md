@@ -1,20 +1,18 @@
-# pixel-shannon-combos
-A new set of configuration files was introduced by Google on the first beta release of Android 14 for the Pixel 7 series along with the implementation of Rel 16 3GPP in its Shannon 5300 modem.
+# Pixel-Shannon-Combos
+An attempt to decode the new set of configuration files introduced by Google in the first beta release of Android 14 for the Pixel 7 series which included the implementation of Rel 16 3GPP in its Shannon 5300 modem. These configuration files are stored in `/vendor/firmware/uecapconfig` in the form of .binarypb (Protobuf) files.
 
-These configuration files reside in `/vendor/firmware/uecapconfig` in the form of .binarypb (Protobuf) files
-
-NR SA and NR NSA carrier aggregation combinations get defined here per mobile carrier
+The configuration files define NR SA and NR NSA carrier aggregation combinations per mobile carrier.
 
 ## Note
-This is by no means final as I do not understand much of the extra functionality defined in the uecapconfig files
+Please note that this is not a final version as there is still additional functionality defined in the uecapconfig files that I don't fully understand.
 
-## Running
-Provide the file as an argument to the uecaps.py script:
+## How to Run
+To use Pixel-Shannon-Combos, simply provide the configuration file as an argument to the uecaps.py script:
 
 `uecaps.py ./uecapconfig/WILDCARD.binarypb > WILDCARD.csv`
 
-The output will create a coma delimited csv file where the left column defines downlink and the right one uplink
-
-Here is an example line
+The output will generate a comma-separated value (CSV) file where the left column defines downlink and the right column defines uplink. Here's an example of a line:
 
 `1-3-7C_n28,7_n28`
+
+Previously decompiled csv's can be found in the uecapconfig_csv directory of this repo - note that these were generated on April 15th and could be out of date at the moment you're looking at this.
