@@ -1,7 +1,25 @@
-syntax = "proto2";
+syntax = "proto3";
 
 message a {
 	repeated b a = 3;
+	repeated bafs aafs = 6;
+	repeated bbfs abfs = 7;
+}
+
+message bafs {
+	int32 bw = 3;
+	int32 layer = 2;
+	int32 ba = 1;
+	int32 bb = 4;
+	int32 bc = 5;
+}
+
+message bbfs {
+	int32 bw = 3;
+	int32 layer = 2;
+	int32 ba = 1;
+	int32 bb = 4;
+	int32 bc = 5;
 }
 
 message b {
@@ -13,9 +31,9 @@ message c {
 }
 
 message ca {
-	required int32 band = 1;
-	required int32 dlcc = 2;
-	required int32 ulcc = 3;
-	required bytes dl = 6;
-	optional bytes ul = 7;
+	int32 band = 1;
+	int32 dlcc = 2;
+	int32 ulcc = 3;
+	repeated int32 fsdl = 6 [packed=true];
+	repeated int32 fsul = 7 [packed=true];
 }
