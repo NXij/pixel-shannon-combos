@@ -11,8 +11,12 @@ To use Pixel-Shannon-Combos, simply provide the configuration file as an argumen
 
 `uecaps.py ./uecapconfig/WILDCARD.binarypb > WILDCARD.csv`
 
-The output will generate a comma-separated value (CSV) file where the left column defines downlink and the right column defines uplink. Here's an example of a line:
+The output will generate a comma-separated value (CSV with headers) file with most of the values found in the binarypb files:
 
-`1-3-7C_n28,7_n28`
+`DL comb	DL MIMO	DL BW	DL Unk A	DL Unk B	DL Unk C	UL comb	UL MIMO	UL BW	UL Unk A	UL Unk B	UL Unk C`
+
+`n2_n77	[2, 4]	[30, 100]	[1, 2]	[2, 2]	[0, 1]	n2	[1]	[20]	[1]	[2]	[0]`
+
+Note that the output files can get rather big
 
 Previously decompiled csv's can be found in the uecapconfig_csv directory of this repo - note that these were generated on April 15th and could be out of date at the moment you're looking at this.
