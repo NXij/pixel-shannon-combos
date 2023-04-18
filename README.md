@@ -15,7 +15,7 @@ The output will generate a comma-separated value (CSV with headers) file with mo
 
 `DL comb	DL MIMO	DL BW	DL Unk A	DL Unk B	DL Unk C	UL comb	UL MIMO	UL BW	UL Unk A	UL Unk B	UL Unk C`
 
-`n2_n77	[2, 4]	[30, 100]	[1, 2]	[2, 2]	[0, 1]	n2	[1]	[20]	[1]	[2]	[0]`
+`2-13_n2_n77C	2;2;2	40;80;80	1;2;2	2;2;2	0;0;0	2_n77	1	50	2	2	0`
 
 Note that the output files can get rather big
 

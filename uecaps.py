@@ -78,7 +78,7 @@ def comboconstructor(combo):
     return dlist, ulist, fsdl, fsul, bwdl, bwul, fsadl, fsbdl, fscdl, fsaul, fsbul, fscul
 
 # Header
-print("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s" % 
+print("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s" % 
     ("DL comb", 
     "DL MIMO", 
     "DL BW", 
@@ -97,30 +97,30 @@ for value in server.a:
     for value1 in value.b:
         dlc = [''.join([('_' if re.match("n.*",i) else '-')+i for i in comboconstructor(value1)[0]])]
         ulc = [''.join([('_' if re.match("n.*",i) else '-')+i for i in comboconstructor(value1)[1]])]
-        print("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s" % 
+        print("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s" % 
             # band dl combo
             (dlc[0][1:], 
             # band dl mimo
-            comboconstructor(value1)[2], 
+            ';'.join(map(str, comboconstructor(value1)[2])),
             # band dl bw
-            comboconstructor(value1)[4], 
+            ';'.join(map(str, comboconstructor(value1)[4])),
             # band dl unknown a
-            comboconstructor(value1)[6], 
+            ';'.join(map(str, comboconstructor(value1)[6])),
             # band dl unknown b
-            comboconstructor(value1)[7], 
+            ';'.join(map(str, comboconstructor(value1)[7])),
             # band dl unknown c
-            comboconstructor(value1)[8], 
+            ';'.join(map(str, comboconstructor(value1)[8])),
             # band ul combo
             ulc[0][1:], 
             # band ul mimo
-            comboconstructor(value1)[3], 
+            ';'.join(map(str, comboconstructor(value1)[3])),
             # band ul bw
-            comboconstructor(value1)[5], 
+            ';'.join(map(str, comboconstructor(value1)[5])),
             # band ul unknown a
-            comboconstructor(value1)[9], 
+            ';'.join(map(str, comboconstructor(value1)[9])),
             # band ul unknown b
-            comboconstructor(value1)[10], 
+            ';'.join(map(str, comboconstructor(value1)[10])),
             # band ul unknown a
-            comboconstructor(value1)[11]))
+            ';'.join(map(str, comboconstructor(value1)[11]))))
         #print(comboconstructor(value1)[0], ";", comboconstructor(value1)[2], sum(comboconstructor(value1)[2]), ";", comboconstructor(value1)[1],";", comboconstructor(value1)[3], sum(comboconstructor(value1)[3]))
 #comboconstructor(value1)[6], comboconstructor(value1)[7], comboconstructor(value1)[8], comboconstructor(value1)[9], comboconstructor(value1)[10], comboconstructor(value1)[11]
