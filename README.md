@@ -7,9 +7,9 @@ The configuration files define NR SA and NR NSA carrier aggregation combinations
 Please note that this is not a final version as there is still additional functionality defined in the uecapconfig files that I don't fully understand.
 
 ## How to Run
-To use Pixel-Shannon-Combos, simply provide the configuration file as an argument to the uecaps.py script:
+To use Pixel-Shannon-Combos, simply provide the directory with the .binarypb files as the first parameter and the second one as the output directory.
 
-`uecaps.py ./uecapconfig/WILDCARD.binarypb > WILDCARD.csv`
+`./uecaps.py ./uecapconfig_a14_b22 ./uecapconfig_csv`
 
 The output will generate a comma-separated value (CSV with headers) file with most of the values found in the binarypb files:
 
@@ -19,4 +19,4 @@ The output will generate a comma-separated value (CSV with headers) file with mo
 
 Note that the output files can get rather big
 
-Previously decompiled csv's can be found in the uecapconfig_csv directory of this repo - note that these were generated on April 15th and could be out of date at the moment you're looking at this.
+Previously decompiled csv's can be found in the uecapconfig_csv directory of this repo - note that these were generated on April 15th and could be out of date at the moment you're looking at this. uuecapconfig_csv_full firectory has the decoded output from the 14 Beta 2.1.
